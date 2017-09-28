@@ -1,0 +1,27 @@
+{
+  "name": "camelcasetodjango",
+  "version": "0.1.6",
+  "description": "simple helper to transform JS object with camelcase notation to lowdash (_) notation",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint . --fix",
+    "test": "mocha"
+  },
+  "keywords": [
+    "camelcase",
+    "delimiter-separated",
+    "words"
+  ],
+  "author": "2PR",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "mocha": "^3.5.3"
+  }
+}
