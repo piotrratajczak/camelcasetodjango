@@ -23,7 +23,7 @@ result is equal to:
 */
 ```
 
-# Installation!
+# Installation:
 ```sh
 $ npm install -camelcasetodjango
 ```

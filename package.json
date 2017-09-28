@@ -1,6 +1,6 @@
 {
   "name": "camelcasetodjango",
-  "version": "0.1.6",
+  "version": "0.1.10",
   "description": "simple helper to transform JS object with camelcase notation to lowdash (_) notation",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,9 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
     "mocha": "^3.5.3"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/piotrratajczak/camelcasetodjango"
   }
 }

@@ -3,15 +3,15 @@ const camelCaseToDjango = require('../');
 
 describe('camelCaseToDjango', () => {
   describe('non objects and null', () => {
-    it('should return same value', () => {
+    it('integer', () => {
       assert.equal(camelCaseToDjango(-1), -1);
     });
 
-    it('should return same value', () => {
+    it('null', () => {
       assert.equal(camelCaseToDjango(null), null);
     });
 
-    it('should return same value', () => {
+    it('string', () => {
       assert.equal(camelCaseToDjango('test'), 'test');
     });
   });
@@ -30,7 +30,7 @@ describe('camelCaseToDjango', () => {
       assert.deepEqual(camelCaseToDjango({}), {});
     });
 
-    it('should work with simple object', () => {
+    it('should work with filled object', () => {
       const obj = {
         simpleint: 1,
         simplestring: 'string',
@@ -65,7 +65,7 @@ describe('camelCaseToDjango', () => {
       assert.deepEqual(camelCaseToDjango(obj), result);
     });
 
-    it('should change camelCase to _ notation with simple values and custom sign', () => {
+    it('should change camelCase to custom notation with simple values', () => {
       const obj = {
         simpleInt: 1,
         simpleString: 'string',
