@@ -1,6 +1,6 @@
 {
   "name": "camelcasetodjango",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "simple helper to transform JS object with camelcase notation to lowdash (_) notation",
   "main": "index.js",
   "scripts": {

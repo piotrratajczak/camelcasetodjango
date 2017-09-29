@@ -23,9 +23,9 @@ function camelCaseToDjango(obj, sign = '_') {
 
       if (isNotNullObject(obj[key])) {
         if (Array.isArray(obj[key])) {
-          value = obj[key].map(el => (isNotNullObject(el) ? camelCaseToDjango(el) : el));
+          value = obj[key].map(el => (isNotNullObject(el) ? camelCaseToDjango(el, sign) : el));
         } else {
-          value = camelCaseToDjango(obj[key]);
+          value = camelCaseToDjango(obj[key], sign);
         }
       }
       result[camelToUnderScore(key, sign)] = value;
