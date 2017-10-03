@@ -1,5 +1,5 @@
 const assert = require('assert');
-const camelCaseToDjango = require('../');
+const camelCaseToDjango = require('../src/');
 
 describe('camelCaseToDjango', () => {
   describe('non objects and null', () => {
@@ -143,13 +143,19 @@ describe('camelCaseToDjango', () => {
     it('should change camelCase to _ notation with mixed props', () => {
       const obj = {
         filledArray: [1, '2', null, [], {}],
-        filledArray2: [1, '2', null, [], {
-          simpleInt: 1,
-          simpleString: 'string',
-          null_Value: null,
-          empty_Array: [],
-          empty_object: {},
-        }],
+        filledArray2: [
+          1,
+          '2',
+          null,
+          [],
+          {
+            simpleInt: 1,
+            simpleString: 'string',
+            null_Value: null,
+            empty_Array: [],
+            empty_object: {},
+          },
+        ],
         filledObject: {
           simpleInt: 1,
           simpleString: 'string',
@@ -157,17 +163,22 @@ describe('camelCaseToDjango', () => {
           empty_Array: [],
           empty_object: {},
         },
-
       };
       const result = {
         filled_array: [1, '2', null, [], {}],
-        filled_array2: [1, '2', null, [], {
-          simple_int: 1,
-          simple_string: 'string',
-          null_value: null,
-          empty_array: [],
-          empty_object: {},
-        }],
+        filled_array2: [
+          1,
+          '2',
+          null,
+          [],
+          {
+            simple_int: 1,
+            simple_string: 'string',
+            null_value: null,
+            empty_array: [],
+            empty_object: {},
+          },
+        ],
         filled_object: {
           simple_int: 1,
           simple_string: 'string',

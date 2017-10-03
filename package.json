@@ -1,14 +1,13 @@
 {
 	"name": "camelcasetodjango",
-	"version": "0.1.11",
+	"version": "0.1.14",
 	"description":
 		"simple helper to transform JS object with camelcase notation to lowdash (_) notation",
-	"main": "index.js",
+	"main": "lib/index.js",
 	"scripts": {
 		"lint": "./node_modules/.bin/eslint . --fix",
 		"test": "mocha",
-		"lib":
-			"babel ./ --out-dir lib --copy-files --ignore node_modules,test,LICENSE,readme.md,package.json,lib"
+		"lib": "babel ./src --out-dir lib"
 	},
 	"keywords": ["camelcase", "delimiter-separated", "words"],
 	"author": "2PR",
